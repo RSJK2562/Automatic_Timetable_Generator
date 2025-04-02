@@ -1,0 +1,338 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 0.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    background-color: #2980b9;
+}
+
+/* Main Content Styles */
+main {
+    padding: 2rem 0;
+}
+
+.welcome {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.welcome h2 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.feature-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card h3 {
+    color: #3498db;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+/* Form Styles */
+.form-container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.btn-secondary {
+    background-color: #95a5a6;
+}
+
+.btn-secondary:hover {
+    background-color: #7f8c8d;
+}
+
+/* Table Styles */
+.table-container {
+    overflow-x: auto;
+    margin: 2rem 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #3498db;
+    color: #fff;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.btn-small {
+    padding: 0.3rem 0.75rem;
+    font-size: 0.9rem;
+}
+
+.btn-delete {
+    background-color: #e74c3c;
+}
+
+.btn-delete:hover {
+    background-color: #c0392b;
+}
+
+.btn-edit {
+    background-color: #f39c12;
+}
+
+.btn-edit:hover {
+    background-color: #d35400;
+}
+
+/* Timetable Styles */
+.timetable {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.timetable-header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.timetable-actions {
+    padding: 1rem;
+    background-color: #ecf0f1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timetable table th {
+    background-color: #2c3e50;
+}
+
+.course-slot {
+    background-color: #d5f5e3;
+    border-radius: 4px;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.course-name {
+    font-weight: bold;
+    color: #16a085;
+}
+
+.course-teacher {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+.course-room {
+    font-size: 0.8rem;
+    color: #95a5a6;
+}
+
+/* Alert Styles */
+.alert {
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.alert-success {
+    background-color: #d5f5e3;
+    color: #16a085;
+    border-left: 4px solid #16a085;
+}
+
+.alert-error {
+    background-color: #fadbd8;
+    color: #e74c3c;
+    border-left: 4px solid #e74c3c;
+}
+
+.alert-warning {
+    background-color: #fef9e7;
+    color: #f39c12;
+    border-left: 4px solid #f39c12;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    color: #7f8c8d;
+    background-color: #ecf0f1;
+    margin-top: 2rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+    
+    .features {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Availability Table */
+.availability-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.availability-table th,
+.availability-table td {
+    padding: 0.5rem;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.availability-table th:first-child,
+.availability-table td:first-child {
+    text-align: left;
+}
+
+.availability-table input[type="checkbox"] {
+    width: auto;
+}
